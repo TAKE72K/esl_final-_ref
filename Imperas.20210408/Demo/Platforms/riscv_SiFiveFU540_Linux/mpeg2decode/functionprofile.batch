@@ -1,0 +1,9 @@
+::idebug
+::ostrace -tasks
+::userloadsymbols -hostfilename mpeg2decode/mpeg2decode.exe
+::isetmessagepoint -message "load_elf_binary*mpeg2decode.exe"
+::isimulate
+::functionprofile -proc U54_hart1 -on -sampleinterval 1
+::isetmessagepoint -message "do_exit*.exe"
+::isimulate
+::exit

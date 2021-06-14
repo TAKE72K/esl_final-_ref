@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.imperas.egui.feature"
+      label="Imperas eGui Feature"
+      version="3.0.0.202101041825"
+      provider-name="Imperas Software Limited">
+
+   <description>
+      Imperas eGui Feature
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyright (c) 2015 Imperas Software Limited. All rights reserved
+
+http://www.imperas.com
+   </copyright>
+
+   <license url="">
+      Software License Agreement for Open Virtual Platforms Technology
+(Revised May 2015. Modified terms of license for ARM Models.)
+Imperas Software Limited.
+---------------------------------
+This is a legal agreement between you, the user (&quot;Licensee&quot;) and Imperas Software Limited (&quot;Imperas&quot;). By downloading any Imperas Software Program including Binaries, Executables, Source, Application Programming Interfaces, Models, and Documentation (&quot;Software&quot;) from the internet, or by otherwise installing or using the Software, Licensee agrees to be bound by the terms of this Software License Agreement (the &quot;Agreement&quot;).
+If Licensee is obtaining an update, then the term &quot;Software&quot; also includes, and the terms and conditions of this Agreement also apply to, any pre-existing Software and data provided within earlier Software releases, to the extent such earlier Software and data is retained by, embodied in or in any way used or accessed by the upgraded Software provided with this Agreement.
+&quot;ARM Models&quot; means any software Models of ARM processors and interface layers that are based on any of the ARMv4, ARMv5, ARMv6, ARMv7 and ARMv8 architectures.
+1A) License for Software
+a) Imperas grants to Licensee, a nonexclusive, nontransferable right to use the Software for Non-Commercial Use only on up to two standalone or networked computer system for a period of three years from the date of this agreement.
+b) Imperas grants to Licensee, a nonexclusive, nontransferable right to use the Software for Evaluation purposes only for a period of 90 days from the date of this agreement.
+c) Imperas grants to Licensee, a nonexclusive, nontransferable right to use the Software for Commercial Use for such time and under such conditions as are defined in a purchase order from Licensee which has been accepted by Imperas and is the subject of a non-overdue invoice from Imperas.
+Non-Commercial Use is defined as usage for personal, home, hobby, academic research, academic education.
+Evaluation is defined as use within a commercial operation for the purposes of evaluating the suitability of the Software. Evaluation does not include any use where the Software is used in Licensee&apos;s development or production processes.
+Commercial Use is defined as any use where the Software is used in Licensee&apos;s development or production processes.
+The Software is controlled by installed license keys and these may be obtained from the Open Virtual Platforms website for short term license keys, or from Imperas for long term license keys.
+1B) Additional License for ARM Models
+1. Licensee is granted a non-exclusive, worldwide, non-transferable, revocable license to:
+(i). If no source is being provided to the Licensee: use and copy only (no modifications rights are granted hereunder) the ARM Models in binary form for the sole purpose of designing, developing, analyzing, debugging, testing, verifying, validating and optimizing software which: (a) (i) is for ARM based systems; and (ii) does not incorporate the ARM Models or any part thereof; and (b) such ARM Models may not be used to emulate an ARM based system to run application software in a production or live environment.
+(ii). If source code is being provided to the Licensee: use, copy and modify the ARM Models for the sole purpose of designing, developing, analyzing, debugging, testing, verifying, validating and optimizing software which: (a) (i) is for ARM based systems; and (ii) does not incorporate the ARM Models or any part thereof; and (b) such ARM Models may not be used to emulate an ARM based system to run application software in a production or live environment.
+(iii). In the case of any Licensee who is either or both an academic or educational institution the purposes shall be limited to internal use.
+2. Except to the extent that such activity is permitted by applicable law, except for the purposes of error correction Licensee shall not reverse engineer, decompile, or disassemble any ARM Model.
+3. This Agreement does not entitle Licensee to manufacture in silicon any product based on any ARM Model.
+4. This Agreement does not entitle Licensee to use the ARM Models for evaluating the validity of any ARM patent.
+5. In any conflict between the ARM Model license terms and Software License terms the ARM Model license terms shall apply
+2) Copyright
+----------------
+Licensee shall not copy the Software, in whole or in part, except as necessary to archive such Software in accordance with the terms and conditions contained herein. All copies of the Software will be subject to all of the terms and conditions of this Agreement. Whenever Licensee is permitted to copy all or any part of the Software, all titles, trademark symbols, copyright symbols and legends and other proprietary markings must be reproduced. Licensee may not copy any part of the documentation, nor modify, adapt,
+translate into any language, or create derivative works based on the documentation without the prior written consent of Imperas.
+3) Ownership
+----------------
+Imperas retains all right, title, and interest in the Software and documentation (and any copy thereof), and reserves all rights not expressly granted to Licensee. This License is not a sale of the original Software or of any copy.
+4) Restrictions
+-------------------
+This Software is licensed to Licensee for internal use only.
+Licensee acknowledges that the scope of the licenses granted hereunder do not permit
+Licensee (and Licensee shall not allow any third party) to:
+(i) Decompile, disassemble, reverse engineer or attempt to reconstruct, identify or discover any source code, underlying ideas, underlying user interface techniques or algorithms of the Software by any means whatever, or disclose any of the foregoing;
+(ii) Provide, lease, lend, use for timesharing or service bureau purposes, or otherwise use or allow others to use the Software for the benefit of third parties;
+(iii) Modify, incorporate into or with other Software, or create a derivative work of any part of the Software;
+(iv) Disclose the results of any benchmarking of the Software, or use such results for its own competing Software development activities, without the prior written permission of Imperas.
+5) Transfer, Distribution
+------------------------------
+Licensee shall not sublicense, transfer or assign this Agreement or any of the rights or licenses granted under this Agreement, without the prior written consent of Imperas. Licensee shall not redistribute or otherwise provide the Software to any third party .
+6) Deleted
+7) Termination
+-------------------
+Imperas may terminate this Agreement or any license granted under it, without notice, in the event of breach or default by Licensee. Upon termination, Licensee will relinquish all rights under this Agreement, and must cease using the Software and return or destroy, at Imperas&apos;s discretion, all copies (and partial copies) of the Software and documentation, and if destroyed, provide written certification of destruction. The provisions of Sections 3, 7, 10 and 12 shall survive any termination of this Agreement.
+8) Export
+------------
+Licensee agrees not to allow the Imperas Software to be sent or used in any
+country except in compliance with applicable U.K. and US laws and regulations.
+9) Warranty and Disclaimer
+----------------------------------
+9.1 Limited Warranty
+--------------------
+Imperas warrants that the Software will perform substantially in accordance with the accompanying documentation for a period of ninety (90) days from the date of receipt, provided that it is used in accordance with the product documentation provided by Imperas, that all associated products (such as hardware, Software, firmware and the like) used in combination with the Software properly exchange date data with it, and that Licensee is covered under a services or maintenance agreement with Imperas regarding the Software.
+Imperas&apos;s entire liability and Licensee&apos;s exclusive remedy for a breach of the preceding limited warranties shall be, at Imperas&apos;s option, either (a) return of the license fee, or (b) providing a fix, patch, or replacement of the Software that does not meet such limited warranty. Any replacement will be warranted for the remainder of the original warranty period or 30 days, whichever is longer.
+9.2 Disclaimer
+------------------
+EXCEPT AS EXPRESSLY SET FORTH ABOVE, NO OTHER WARRANTIES OR CONDITIONS, EITHER EXPRESSED OR IMPLIED, ARE MADE BY IMPERAS WITH RESPECT TO THE SOFTWARE AND THE ACCOMPANYING DOCUMENTATION (STATUTORY OR OTHERWISE), AND IMPERAS EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS NOT EXPRESSLY STATED HEREIN, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE. IMPERAS DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE WILL MEET LICENSEE&apos;S REQUIREMENTS, BE UNINTERRUPTED OR ERROR FREE, OR THAT ALL DEFECTS IN THE PROGRAM WILL BE CORRECTED.
+Licensee assumes the entire risk as to the results and performance of the Software.
+10) Limitation of Liability
+--------------------------------
+LICENSEE AGREES THAT IN NO EVENT SHALL IMPERAS OR ITS AGENTS BE LIABLE FOR ANY INDIRECT, SPECIAL, CONSEQUENTIAL OR INCIDENTAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTIONS, LOSS OF BUSINESS INFORMATION, OR OTHER PECUNIARY LOSS) ARISING OUT OF USE OF OR INABILITY TO USE THESE IMPERAS PRODUCTS, EVEN IF IMPERAS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+In no event will Imperas be liable to Licensee for damages in an amount greater than the fees paid for the use of the Software.
+11) Indemnity
+-----------------
+In the event that a claim alleging infringement of an intellectual property right arises concerning the Software (including but not limited to patent, trade secret, copyright or trademark rights), Imperas in its sole discretion may elect to defend or settle such claim. Imperas in the event of such a claim may also in its sole discretion elect to terminate this Agreement and all rights to use the Software, and require the return or destruction of the Software, with a refund of the fees paid for use of the Software less a reasonable allowance for use.
+12) Miscellaneous
+-----------------------
+If Licensee is a corporation, partnership or similar entity, then the license to the Software that is granted under this Agreement is expressly conditioned upon acceptance by a person who is authorized to sign for and bind the entity. This Agreement is the entire agreement between Licensee and Imperas with respect to the license to the Software, and supersedes any previous oral or written communications or documents (including, if you are obtaining an update, any agreement that may have been included with the initial version of the Software). This Agreement is with Imperas Software Limited, a company registered in England # 6779752 having its registered office at North Weston Thame
+OX9 2HA and will be construed, interpreted, and applied in accordance with the laws of England and Wales (excluding its body of law controlling conflicts of law). This Agreement is the complete and exclusive statement regarding the subject matter of this Agreement and supersedes all prior agreements, understandings and communications, oral or written, except a valid Software License Agreement, between the parties regarding the subject matter of this Agreement. This Agreement will not be governed by the U.N. Convention on Contracts for the International Sale of Goods. If any provision of this Agreement is found to be invalid or unenforceable, it will be enforced to the extent permissible and the remainder of this Agreement will remain in full force and effect. Failure to prosecute a party&apos;s rights with respect to a default hereunder will not constitute a waiver of the right to enforce rights with respect to the same or any other breach.
+13) U.S. Government Users
+-----------------------------------
+Use, reproduction, release, modification, or disclosure of this commercial computer Software, or of any related documentation of any kind, is restricted in accordance with FAR 12.212 and DFARS 227.7202, and further restricted by this License Agreement.
+OVP_Imperas_Software_License (v.2.0b 27th May 2015)
+   </license>
+
+   <requires>
+      <import plugin="com.imperas.egui.mpd.core" version="3.0.0" match="compatible"/>
+      <import plugin="com.imperas.egui.gdb.core" version="3.0.0" match="compatible"/>
+      <import plugin="com.imperas.egui.cdt.enhancements" version="3.0.0" match="compatible"/>
+      <import plugin="org.eclipse.ui" version="3.108.1" match="compatible"/>
+      <import plugin="org.eclipse.core.runtime" version="3.12.0" match="compatible"/>
+      <import plugin="org.eclipse.debug.ui" version="3.11.202" match="compatible"/>
+      <import plugin="org.eclipse.cdt.dsf.ui" version="2.5.0" match="compatible"/>
+      <import plugin="org.eclipse.cdt.dsf" version="2.8.0" match="compatible"/>
+      <import plugin="org.eclipse.cdt.debug.core" version="8.2.0" match="compatible"/>
+      <import plugin="org.eclipse.cdt.dsf.gdb.ui" version="2.6.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor" version="3.10.1" match="compatible"/>
+      <import plugin="org.eclipse.cdt.ui" version="6.2.0" match="compatible"/>
+      <import plugin="org.eclipse.cdt.core" version="6.3.1" match="compatible"/>
+      <import plugin="org.eclipse.cdt.dsf.gdb" version="5.3.0" match="compatible"/>
+      <import plugin="org.eclipse.cdt.launch" version="9.1.0" match="compatible"/>
+      <import plugin="org.eclipse.core.variables" version="3.3.0" match="compatible"/>
+      <import plugin="org.eclipse.cdt.debug.ui" version="8.2.0" match="compatible"/>
+      <import plugin="org.eclipse.jface.text" version="3.11.2" match="compatible"/>
+      <import plugin="org.eclipse.ui.ide" version="3.12.3" match="compatible"/>
+      <import plugin="org.eclipse.core.filesystem" version="1.6.1" match="compatible"/>
+      <import plugin="org.eclipse.ui.cheatsheets" version="3.5.0" match="compatible"/>
+      <import plugin="com.ibm.icu"/>
+      <import plugin="org.eclipse.debug.core" version="3.10.100" match="compatible"/>
+      <import plugin="org.eclipse.linuxtools.dataviewers" version="6.1.0" match="compatible"/>
+      <import plugin="org.eclipse.core.resources" version="3.11.1" match="compatible"/>
+      <import plugin="org.eclipse.linuxtools.binutils" version="6.0.0" match="compatible"/>
+      <import plugin="org.eclipse.linuxtools.dataviewers.charts" version="6.0.0" match="compatible"/>
+      <import plugin="org.eclipse.cdt.dsf.gdb" version="5.8.101" match="equivalent"/>
+      <import plugin="org.eclipse.linuxtools.dataviewers" version="6.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.linuxtools.binutils" version="6.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.11.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.linuxtools.dataviewers.charts" version="6.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.12.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console" version="3.6.201" match="compatible"/>
+      <import plugin="org.eclipse.pde.runtime"/>
+   </requires>
+
+   <plugin
+         id="com.imperas.egui"
+         download-size="404"
+         install-size="1760"
+         version="3.0.0.202101041825"
+         unpack="false"/>
+
+   <plugin
+         id="com.imperas.egui.cdt.enhancements"
+         download-size="236"
+         install-size="575"
+         version="3.0.0.202101041825"
+         unpack="false"/>
+
+   <plugin
+         id="com.imperas.egui.mpd.core"
+         download-size="371"
+         install-size="866"
+         version="3.0.0.202101041825"
+         unpack="false"/>
+
+   <plugin
+         id="com.imperas.egui.branding"
+         download-size="15"
+         install-size="17"
+         version="3.0.0.202101041825"
+         unpack="false"/>
+
+   <plugin
+         id="com.imperas.egui.setpathmaps"
+         download-size="9"
+         install-size="15"
+         version="3.0.0.202101041825"
+         unpack="false"/>
+
+   <plugin
+         id="com.imperas.egui.gdb.core"
+         download-size="38"
+         install-size="82"
+         version="3.0.0.202101041825"
+         unpack="false"/>
+
+   <plugin
+         id="com.imperas.egui.icov.core"
+         download-size="74"
+         install-size="141"
+         version="3.0.0.202101041825"
+         unpack="false"/>
+
+   <plugin
+         id="com.imperas.egui.iprof.core"
+         download-size="56"
+         install-size="106"
+         version="3.0.0.202101041825"
+         unpack="false"/>
+
+</feature>

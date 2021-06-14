@@ -1,0 +1,8 @@
+install RUNTIME OVPsim CpuManager
+install Imperas.harness
+debug   RUNTIME     CpuManager
+debug   Imperas_SDK Imperas.RemoteDebugger
+vap     RUNTIME     CpuManager
+vap     Imperas_SDK
+custom  RUNTIME     CpuManager
+custom  PERSONALITY CPUMAN_MULTI

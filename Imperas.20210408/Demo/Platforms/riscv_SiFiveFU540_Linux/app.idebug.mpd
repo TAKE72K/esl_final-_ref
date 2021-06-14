@@ -1,0 +1,11 @@
+# Commands to load symbol information
+::puts "** Load symbolic information for custom_asm.exe on each processor"
+::iloadsymbolfile -file custom/custom_asm.exe -processor U54_hart1
+::iloadsymbolfile -file custom/custom_asm.exe -processor U54_hart2
+::iloadsymbolfile -file custom/custom_asm.exe -processor U54_hart3
+::iloadsymbolfile -file custom/custom_asm.exe -processor U54_hart4
+# commands to setup break on main 
+::idebug
+::puts "** Set breakpoint on custom_asm.exe main"
+proc apply U54_hart1 U54_hart2 U54_hart3 U54_hart4 dir custom
+proc apply U54_hart1 U54_hart2 U54_hart3 U54_hart4 break main

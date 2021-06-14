@@ -1,0 +1,441 @@
+###############################################################################
+#                           CHANGELOG.eGUI.txt                                #
+#      Copyright (c) 2005-2021 Imperas Software Ltd., www.imperas.com         #
+#               Covered under your Software License Agreement                 #
+#                                                                             #
+###############################################################################
+    Date : 20210505                        Version : 20210408.0
+###############################################################################
+
+- The eGui_Eclipse package is now based on Eclipse version 202003. If needed,  
+  the previous Eclipse version, Neon, is available in the
+  eGui_Eclipse_neon_legacy package.
+- If both versions are installed, the eGui.202003 will be invoked by default 
+  when egui.exe or the --mpdegui command line option are used. To override this, 
+  install the eGui_Eclipse_neon_legacy package and set the IMPERAS_EGUI_DIR 
+  environment variable to eGui.neon.
+- If running on a true 32 bit system (i.e. a 32 bit OS, not a 64 bit OS using 
+  32 bit compatibility mode) the you must use the eGui_Eclipse_neon_legacy
+  package.
+- Updated the jre provided with eGui to OpenJDK version jdk8u265-b01-jre for
+  all architectures except Linux32.
+
+###############################################################################
+##                                                                           ##
+## Date 2020-June-30                                                         ##
+##                                                                           ##
+## Release 20200630.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+- Handling of eventpoints added to the breakpoint window.
+
+- Checkboxes added in the Programmer's View to enable/disable read/write 
+  breakpoints on PSE registers.
+  
+- eguieclipse performance for large designs greatly improved.
+
+###############################################################################
+##                                                                           ##
+## Date 2019-October-09                                                      ##
+##                                                                           ##
+## Release 20191009.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+EGit plugin included in eguieclipse
+-------------------------------------------------------------------------------
+The EGit plugin that supports using git from inside Eclipse is now included
+by default in eguieclipse. Previously it was necessary to add this plugin
+yourself if it was needed.
+
+- During disassembly, if a gdb fails to recognize an instruction, egui now uses
+  the processor model to disassemble the instruction instead. This behaviour
+  can be turned off using mpd command 'set mixeddisassembly 0' (in the debug
+  console window)
+
+###############################################################################
+##                                                                           ##
+## Date 2019-June-28                                                         ##
+##                                                                           ##
+## Release 20190628.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+###############################################################################
+##                                                                           ##
+## Date 2019-March-06                                                        ##
+##                                                                           ##
+## Release 20190306.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+Debug Sources view problem with certain native gdb versions fixed
+-------------------------------------------------------------------------------
+A problem displaying the Debug Sources view for native code when using the 
+Attach Hostcode feature has been fixed. 
+
+Improved behavior after simulation has finished
+-------------------------------------------------------------------------------
+When simulation has finished (all processors have exited) eguieclipse will now
+gray out the resume/step/... buttons. You may introspect the final state of the 
+models at this point.
+
+Filter selection added to Programmers View
+-------------------------------------------------------------------------------
+The ability to filter what registers are shown has been added to the programmers
+view.
+
+Attach Hostcode command moved from Imperas menu to Run menu
+-------------------------------------------------------------------------------
+The "Attach Hostcode" command that was formally in the Imperas menu has been
+moved to the Run menu (this item is only available in the Debug Perspective.)
+Since this was the only item in the Imperas menu, that menu has been removed.
+
+###############################################################################
+##                                                                           ##
+## Date 2018-November-14                                                     ##
+##                                                                           ##
+## Release 20181114.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+eguieclipse plugin zip file name changed
+-------------------------------------------------------------------------------
+The name of the eguieclipse plugin zip file has been changed to:
+   com.imperas.egui.p2.zip
+
+jre version updated on 64 bit hosts
+-------------------------------------------------------------------------------
+The jre included with eGui on 64-bit hosts has been updated to:
+   openjdk version "1.8.0-adoptopenjdk"
+
+Added a debug version of the "Imperas- Launch Simulator" run configuration
+-------------------------------------------------------------------------------
+The "Imperas- Launch Simulator" run configuration available in the C/C++ 
+perspective under "Run->Run Configurations..." now supports a debug version
+available under "Run->Debug Configurations...". This allows the user to tell
+eguieclipse how to launch a simulation run with a debug session connected to it.
+
+egui.exe startup utility
+-------------------------------------------------------------------------------
+The behavior has been changed when the egui.exe startup utility program is used 
+in start-only mode to just start eguieclipse without connecting to a simulation, 
+(i.e. run with no --cli or --open option selected):
+  - No longer will start a new eguieclipse if one is already running.
+  - Waits for eguieclipse to successfully startup before returning.
+  - Returns a non-zero exit code if eguieclipse does not start successfully.
+Previously egui.exe would always start a new eguieclipse in this mode, even if
+one was already running, and return as soon as the new eguieclipse process was 
+created, without checking if eguieclipse actually started successfully. 
+ 
+###############################################################################
+##                                                                           ##
+## Date 2018-July-16                                                         ##
+##                                                                           ##
+## Release 20180716.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+Programmers View updates correctly
+-------------------------------------------------------------------------------
+A bug has been fixed that caused the Programmers View to sometimes not get
+updated when control returned to the debugger.
+
+Module hierarchy now reflected in eGui Debug view
+-------------------------------------------------------------------------------
+The eGui Debug view now reflects the hierarchy of the design being simulated.
+
+New Resume Until/For tool bar button added
+-------------------------------------------------------------------------------
+A new tool bar button has been added which can be used to easily resume 
+execution for a specific number of instructions or seconds or to resume 
+execution until a specific instruction count or time.
+
+The icon for the new button looks like the standard Resume (a yellow and green
+right arrow 'play' icon) but with a black 'i' on it. 
+
+New Debug Sources view added
+-------------------------------------------------------------------------------
+A new  Debug Sources view has been added to eguieclipse. This view shows the
+source files known to the debugger, allowing them to then be easily opened in 
+the source window. Use Window->Show View->Debug Sources to open this new view.
+
+egui.exe handling of eguieclipse launch failure improved
+-------------------------------------------------------------------------------
+Handling of errors that occur when eguieclipse is launched by the egui.exe 
+utility program have been improved. Previously egui.exe would time out
+waiting for an egui.port file to be created. Now it detects when the 
+eguieclipse process has terminated due to an error and terminates itself 
+immediately.
+
+Out of memory issue fixed
+-------------------------------------------------------------------------------
+A problem that could cause eguieclipse to run out of memory when large numbers 
+of breakpoints were created and deleted has been fixed.
+
+"Target not available" popup error message fixed
+-------------------------------------------------------------------------------
+A problem that could result in a popup error message saying "Error: Target not 
+available" when a number of step commands were rapidly executed has been fixed. 
+
+Additional file extensions support for functionprofile and linecoverage viewers
+-------------------------------------------------------------------------------
+The following filename extensions are now supported by default:
+   functionprofile viewer: .fprof
+   linecoverage viewer: .lcov
+These are non-standard extensions that are used in some demo scripts. They are 
+supported in addition to the standard extensions .iprof and .icov. Note that
+users may configure the supported extensions for their workspace using:
+   Preferences->General->Editors->File Associations
+
+Programmer's view fonts may be changed
+-------------------------------------------------------------------------------
+The font used in the Programmer's View for variables now will use the same font 
+as other variable displays in Eclipse. It can be changed in:
+ Windows->Preferences->General->Appearance->Colors and Fonts->Debug->Variable text font
+
+###############################################################################
+##                                                                           ##
+## Date 2018-March-12                                                        ##
+##                                                                           ##
+## Release 20180221.1                                                        ##
+##                                                                           ##
+###############################################################################
+
+eguieclipse plugin updated for Eclipse Oxygen.2
+-------------------------------------------------------------------------------
+The eguieclipse plugin is now compatible with the standard Eclipse Oxygen.2
+release. See the eGui Eclipse User Guide for installation instructions. Note 
+that the eguieclipse breakpoint create/delete race bug fix which required a CDT 
+update that is not in Oxygen.2 will not be fixed when using the plugin.
+
+###############################################################################
+##                                                                           ##
+## Date 2018-February-21                                                     ##
+##                                                                           ##
+## Release 20180221.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+eguieclipse memory leaks fixed
+-------------------------------------------------------------------------------
+Several memory leaks have been fixed reducing memory usage in some situations.
+
+eguieclipse breakpoint create/delete race fixed
+-------------------------------------------------------------------------------
+A bug in Eclipse CDT that could cause an error if a breakpoint was deleted 
+immediately after being created has been fixed in eguieclipse. This bug has also
+been fixed in Eclipse CDT version 9.5, which is scheduled to be released in 
+June 2018. Users wishing to install the eGui plugin in the Eclipse Oxygen 
+version should contact Imperas for information on updating to CDT 9.5.
+
+eguieclipse disabled eventpoints bug fixed
+-------------------------------------------------------------------------------
+A bug in eguieclipse that would cause an eventpoint that was disabled in a debug
+session to be active after starting a new debug session using the same workspace
+has been fixed. Eventpoints will now remain disabled across debug sessions. 
+
+Viewers for VAP linecoverage and functionprofile added to Imperas eGui Eclipse 
+-------------------------------------------------------------------------------
+Viewers for the output from the VAP linecoverage and functionprofile tools
+have been added to eguieclipse. Opening a file in eGui Eclipse that has a suffix
+of .iprof or .icov will open the appropriate viewer (Files may be opened using 
+the File->Open File... menu selection or by double clicking on a file in the 
+Project Explorer view.)
+
+In addition addition, egui.exe now supports a --open argument as explained 
+below.
+
+egui.exe command line arguments
+-------------------------------------------------------------------------------
+- egui.exe no longer passes unrecognized arguments to the eguieclipse command
+  line. Unrecognized arguments now result in an error message. To pass
+  command line arguments to the eguieclipse command line use the --eguioptions
+  command line argument of egui.exe. Note that multiple --eguioptions arguments
+  are now supported.
+  
+- The egui.exe user arguments --open, --verbose, --eguioptions and --version 
+  may now optionally be specified with a single dash (e.g. -open)
+  
+- egui.exe now supports the --open argument that can be used to tell eguieclipse
+  to open a file for viewing. This is primarily intended to be used for viewing
+  functionprofile (*.iprof) and linecoverage (*.icov) results but can be used
+  for any file type supported by eguieclipse.
+
+Duplicate breakpoint problem fixed
+-------------------------------------------------------------------------------
+A bug that could cause multiple duplicate breakpoints to be added in 
+multiprocessor simulations has been fixed.    
+
+Problem fixed preventing eguieclipse to be installed as a plugin 
+-------------------------------------------------------------------------------
+A problem preventing eguieclipse plugin installation has been fixed. Note that
+it can only be installed as a plugin in the Eclipse Oxygen version or later and 
+it requires CDT to be updated to version 9.5. 
+
+ 
+###############################################################################
+##                                                                           ##
+## Date 2017-September-19                                                    ##
+##                                                                           ##
+## Release 20170919.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+Imperas eGui Eclipse updated to the Eclipse Neon version
+-------------------------------------------------------------------------------
+The Imperas eGui Eclipse product has been updated to use the newer Eclipse Neon
+version (previously it was based on Eclipse Luna). Eclipse Neon includes 
+numerous bug fixes and enhancements. 
+
+eGui Eclipse now also includes a new Debug Console view that supports command
+history. 
+
+egui.exe now supports installation of multiple versions of eGui
+-------------------------------------------------------------------------------
+egui.exe will now look in the following directories (in this order) for the
+eguieclipse executable by default:
+    $IMPERAS_HOME/lib/$IMPERAS_ARCH/eGui
+    $IMPERAS_HOME/lib/$IMPERAS_ARCH/eGui.neon
+    $IMPERAS_HOME/lib/$IMPERAS_ARCH/eGui.luna
+and will use the first one that it finds. This default behavior can be 
+overridden by setting the IMPERAS_EGUI_DIR environment variable to the specific 
+version desired (e.g. eGui, eGui.neon or eGui.luna). This is useful to select
+a specific version when multiple versions have been installed.
+
+###############################################################################
+##                                                                           ##
+## Date 2017-May-12                                                          ##
+##                                                                           ##
+## Release 20170511.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+###############################################################################
+##                                                                           ##
+## Date 2016-March-23                                                        ##
+##                                                                           ##
+## Release 20160323.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+egui.exe closes simulator when error occurs
+-------------------------------------------------------------------------------
+If egui.exe receives an error indication when attempting to launch eguieclipse
+in command line mode it will scan the --cli parameter value to determine if
+the simulator is waiting for a port connection from eguieclipse and if so it
+will connect to that port and immediately close it. This prevents leaving
+the simulator waiting for a debugger connection that is never going to happen.
+
+Variable view fix
+-------------------------------------------------------------------------------
+A bug that could cause mpd.exe crashes when the variable view was open on
+a PSE has been fixed.
+
+KNOWN LIMITATIONS:
+------------------
+Programmers View:
+- The rbrk and wbrk fields in the programmers view do not work for application
+  processors but do work for PSE processors.
+- For PSE processors only, clicking the rbrk and wbrk fields will 
+  create/remove eventpoints on the register but the check boxes remain blank.
+  These eventpoints do show up in the breakpoints window.
+
+Breakpoint Properties:
+- To edit the breakpoint properties use the context menu that is opened by 
+  right clicking on the breakpoint and selecting "Breakpoint Properties..."
+  from the context menu. Opening the breakpoint properties with ALT-Enter
+  opens a different properties menu that is not supported in eGui. Do not use 
+  the ALT-Enter method to edit the breakpoint properties!
+
+
+###############################################################################
+##                                                                           ##
+## Date 2015-December-03                                                     ##
+##                                                                           ##
+## Release 20151203.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+--gdbcommandfile <fn> option supported when using --gdbegui
+-------------------------------------------------------------------------------
+When using the --gdbegui option to launch the eguieclipse debugger the 
+--gdbcommandfile option may now be used to specify a file of gdb commands to 
+run at the start of simulation. This is the equivalent of typing the command
+'source <fn>' in the gdb console window.
+
+--batch <fn> option supported when using --mpdegui
+-------------------------------------------------------------------------------
+When using the --mpdegui option to launch the eguieclipse debugger the 
+--batch option may now be used to specify a file of mpd commands to 
+run at the start of simulation. This is the equivalent of typing the command
+'source <fn>' in the gdb console window. Note that the debugger starts out in
+tcl mode - use the command '::idebug' in the mpd command file to switch to 
+debug mode where gdb commands may be used.
+
+KNOWN LIMITATIONS:
+------------------
+Variables view:
+- On Windows the variable view and hovering on a variable may sometimes 
+  show the message:
+     "Error: Failed to execute MI command..."
+  in the variable value field. The gdb print command may be used in the mpd 
+  console view to see the variable value in this case.
+
+###############################################################################
+##                                                                           ##
+## Date 2015-August-24                                                       ##
+##                                                                           ##
+## Release 20150901.0                                                        ##
+##                                                                           ##
+###############################################################################
+
+KNOWN LIMITATIONS:
+------------------
+
+Debug View:
+- When a breakpoint is hit the instance corresponding to where the breakpoint 
+  occurred is not always automatically selected. You can examine the status  
+  info listed for each ID to find the one that indicates "breakpoint". (The 
+  status is shown in parentheses at the end of the "ID" line)
+
+Breakpoints View:
+- In multiprocessor platforms, deleting or disabling breakpoints from the 
+  breakpoint view or the source window view may not work. It is possible to 
+  delete breakpoints from the MPD Console by using the gdb command
+  'info breakpoints' to see the current breakpoints and 'delete <number>'
+  to delete a specific breakpoint.
+
+Memory View:
+- If a memory monitor spans a region with both valid memory and invalid memory 
+  the entire view will show as invalid memory.
+
+Source View:
+- Breakpoint markers in source file views may have spurious error markers 
+  indicating "Breakpoint installation failed". This is due to the CDT 
+  behavior of adding breakpoints on all targets, and can be ignored.
+
+Programmers View:
+- The Programmers View window does not update automatically when a breakpoint
+  is hit. Selecting a different stack entry in the Debug view will cause it
+  to update.
+- The rbrk and wbrk fields are not functional. In the future these will allow
+  eventpoints to be set to cause breaks on reads or writes of a register.
+
+Programmers View events:
+- Programmers View events may be managed by entering commands directly in the
+  MPD console but are not displayed properly in the breakpoints view, and may
+  cause spurious error messages.
+
+A problem with "Clear Breakpoints Status" may be reported when terminating a 
+simulation in some situations. This can be safely ignored.
+
+The suspend button does not work when running the Windows 32-bit version on a
+64-bit host (i.e. when setup.bat has been run with the -m32 option). 
+
+###############################################################################
+#                                                                             #
+# Date 2015-April-12                                                          #
+#                                                                             #
+###############################################################################

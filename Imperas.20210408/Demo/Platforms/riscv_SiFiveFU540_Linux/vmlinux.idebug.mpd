@@ -1,0 +1,3 @@
+::idebug
+::puts "** Set breakpoint start_kernel"
+proc apply U54_hart1 U54_hart2 U54_hart3 U54_hart4 break start_kernel

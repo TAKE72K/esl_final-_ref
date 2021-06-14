@@ -1,0 +1,73 @@
+Info Session started: Mon Jun 14 21:55:27 2021
+
+Info ------------- ENVIRONMENT -------------
+Info IMPERAS_ARCH                             = Linux32
+Info IMPERAS_HOME                             = /home/edat/ovp/Imperas.20210408
+Info IMPERAS_ISS                              = iss.exe
+Info IMPERAS_M32                              = 1
+Info IMPERAS_SHRSUF                           = so
+Info IMPERAS_UNAME                            = Linux
+Info IMPERAS_VLNV                             = /home/edat/ovp/Imperas.20210408/lib/Linux32/ImperasLib
+Info LD_LIBRARY_PATH                          = /usr/local/systemc-2.3.3/lib-linux/:/usr/local/systemc-2.3.3/lib-linux/::/home/edat/ovp/Imperas.20210408/bin/Linux32:/home/edat/ovp/Imperas.20210408/bin/Linux32
+Info SYSTEMC_HOME                             = /usr/local/systemc-2.3.3
+Info --------------------------------------
+Info -------- FLAGS (from iss.exe)
+Info --verbose
+Info --output  imperas.log
+Info --program  ../../../Applications/dhrystone/dhrystone.RISCV32-O0-g.elf
+Info --processorvendor  riscv.ovpworld.org
+Info --processorname  riscv
+Info --variant  RV32G
+Info --numprocessors  1
+Info --override  iss/cpu0/verbose=1
+Info --gdbegui
+Info --eguicommands
+Info --breakonstartup main --continueonstartup
+Info --------------------------------------
+
+
+OVPsim (32-Bit) v20210408.0 Open Virtual Platform simulator from www.OVPworld.org.
+Copyright (c) 2005-2021 Imperas Software Ltd.  Contains Imperas Proprietary Information.
+Licensed Software, All Rights Reserved.
+Visit www.IMPERAS.com for multicore debug, verification and analysis solutions.
+
+OVPsim started: Mon Jun 14 21:55:27 2021
+
+
+Info (GDBT_PORT) Host: edat-VirtualBox, Port: 50715
+Info (DBC_ECL) Starting Eclipse with GDB
+Info (GDBT_WAIT) Waiting for remote debugger to connect...
+Info (OR_OF) Target 'iss/cpu0' has object file read from '../../../Applications/dhrystone/dhrystone.RISCV32-O0-g.elf'
+Info (OR_PH) Program Headers:
+Info (OR_PH) Type           Offset     VirtAddr   PhysAddr   FileSiz    MemSiz     Flags Align
+Info (OR_PD) LOAD           0x00000000 0x00010000 0x00010000 0x00017c48 0x00017c48 R-E   1000
+Info (OR_PD) LOAD           0x00017c48 0x00028c48 0x00028c48 0x000009c0 0x00003244 RW-   1000
+Info (GDBT_CONNECTED) Client connected
+Warning (RISCV_URC) CPU 'iss/cpu0': this processor implements 32-bit GPRs but 64-bit FPRs, which is currently not supported by gdb - forcing apparent FPR width to 32 bits (matching GPRs)
+Info (GDBT_KILL) Client requested shutdown
+Info 
+Info ---------------------------------------------------
+Info CPU 'iss/cpu0' STATISTICS
+Info   Type                  : riscv (RV32G)
+Info   Nominal MIPS          : 100
+Info   Final program counter : 0x1030c
+Info   Simulated instructions: 4,058
+Info   Simulated MIPS        : 0.0
+Info ---------------------------------------------------
+Info 
+Info ---------------------------------------------------
+Info SIMULATION TIME STATISTICS
+Info   Simulated time        : 0.00 seconds
+Info   User time             : 0.10 seconds
+Info   System time           : 0.30 seconds
+Info   Elapsed time          : 24.27 seconds
+Info ---------------------------------------------------
+
+OVPsim finished: Mon Jun 14 21:56:04 2021
+
+
+OVPsim (32-Bit) v20210408.0 Open Virtual Platform simulator from www.OVPworld.org.
+Visit www.IMPERAS.com for multicore debug, verification and analysis solutions.
+
+Info Session ended: Mon Jun 14 21:56:04 2021
+

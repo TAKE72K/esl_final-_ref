@@ -1,0 +1,12 @@
+!SESSION 2021-06-14 21:55:28.156 -----------------------------------------------
+eclipse.buildId=3.0.0.202101041825
+java.version=1.8.0_265
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=zh_TW
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.imperas.egui 1 -1 2021-06-14 21:55:38.282
+!MESSAGE CommandLineLaunchService listening for connections on port 34189
+
+!ENTRY com.imperas.egui 1 -1 2021-06-14 21:55:38.284
+!MESSAGE CommandLineLaunchService wrote port number to file: /home/edat/.egui.port.

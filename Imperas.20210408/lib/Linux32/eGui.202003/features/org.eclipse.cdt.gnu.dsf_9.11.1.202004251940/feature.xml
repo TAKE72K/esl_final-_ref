@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.cdt.gnu.dsf"
+      label="%featureName"
+      version="9.11.1.202004251940"
+      provider-name="%providerName"
+      plugin="org.eclipse.cdt.dsf.gdb.ui">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.cdt.dsf.gdb"
+         download-size="1783"
+         install-size="4188"
+         version="5.8.101.202004251940"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.dsf.gdb.ui"
+         download-size="834"
+         install-size="1765"
+         version="2.6.501.202004251940"
+         unpack="false"/>
+
+</feature>
